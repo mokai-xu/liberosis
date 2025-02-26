@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberosis - Album</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Proxima Nova font - using a CDN link (you might need to use a proper license) -->
+    <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css"> <!-- Replace xxxxxxx with your actual Adobe Fonts kit ID if you have Proxima Nova licensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="album">
+            <div class="album-inner">
+                <div class="album-front">
+                    <img src="album222.png" alt="Liberosis Album Cover">
+                </div>
+                <div class="album-back">
+                    <ul>
+                        <li onclick="openModal(1)">Track 1 - Dreamscape</li>
+                        <li onclick="openModal(2)">Track 2 - Nightfall</li>
+                        <li onclick="openModal(3)">Track 3 - Celestial Waves</li>
+                        <li onclick="openModal(4)">Track 4 - Ethereal Light</li>
+                        <li onclick="openModal(5)">Track 5 - Liberosis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Pre-save button -->
+        <a href="https://open.spotify.com/artist/4wQ4CoGKeE4SVL4lGlV3Eh?si=rWhaXIVTQ4qd2aH-ZmwV3w" target="_blank" class="pre-save-button">Pre-save now</a>
+    </div>
+
+    <!-- Modals for each track -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(1)">&times;</span>
+            <h2>Dreamscape</h2>
+            <p>A surreal journey into the subconscious, floating through dreams.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(2)">&times;</span>
+            <h2>Nightfall</h2>
+            <p>The world falls silent as the stars take the stage.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(3)">&times;</span>
+            <h2>Celestial Waves</h2>
+            <p>A cosmic dance of sound and light in the vast universe.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(4)">&times;</span>
+            <h2>Ethereal Light</h2>
+            <p>A song that shines like a soft glow in the darkness.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(5)">&times;</span>
+            <h2>Liberosis</h2>
+            <p>A feeling of lightness, letting go of worries and embracing freedom.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
