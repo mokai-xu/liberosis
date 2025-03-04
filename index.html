@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liberosis - Album</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Add Proxima Nova font - using a CDN link (you might need to use a proper license) -->
-    <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css"> <!-- Replace xxxxxxx with your actual Adobe Fonts kit ID if you have Proxima Nova licensed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!--     <link rel="stylesheet" href="styles.css">
+ -->    <!-- Add Proxima Nova font - using a CDN link (you might need to use a proper license) -->
+    <link rel="stylesheet" href="styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -21,53 +24,69 @@
                 </div>
                 <div class="album-back">
                     <ul>
-                        <li onclick="openModal(1)">Track 1 - Dreamscape</li>
-                        <li onclick="openModal(2)">Track 2 - Nightfall</li>
-                        <li onclick="openModal(3)">Track 3 - Celestial Waves</li>
-                        <li onclick="openModal(4)">Track 4 - Ethereal Light</li>
-                        <li onclick="openModal(5)">Track 5 - Liberosis</li>
+                        <li onclick="openModal(1)">track 1 - airplane mode</li>
+                        <li onclick="openModal(2)">track 2 - feel the moment</li>
+                        <li onclick="openModal(3)">track 3 - play harder</li>
+                        <li onclick="openModal(4)">track 4 - dance with me now</li>
+                        <li onclick="openModal(5)">track 5 - keep me awake</li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- Pre-save button -->
         <a href="https://open.spotify.com/artist/4wQ4CoGKeE4SVL4lGlV3Eh?si=rWhaXIVTQ4qd2aH-ZmwV3w" target="_blank" class="pre-save-button">Pre-save now</a>
+
+        <!-- Social Media Buttons -->
+        <div class="social-links">
+            <a href="https://soundcloud.com/2kaimusic" target="_blank" class="social-btn soundcloud">
+                <i class="fab fa-soundcloud"></i>
+            </a>
+            <a href="https://youtube.com/2kaimusic" target="_blank" class="social-btn youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://open.spotify.com/artist/4wQ4CoGKeE4SVL4lGlV3Eh" target="_blank" class="social-btn spotify">
+                <i class="fab fa-spotify"></i>
+            </a>
+            <a href="https://instagram.com/2kaimusic" target="_blank" class="social-btn instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </div>
 
     <!-- Modals for each track -->
     <div class="modal" id="modal1">
         <div class="modal-content">
             <span class="close" onclick="closeModal(1)">&times;</span>
-            <h2>Dreamscape</h2>
-            <p>A surreal journey into the subconscious, floating through dreams.</p>
+            <h2>airplane mode</h2>
+            <p>Your airplane is taking off, and the flight attendant asks you to turn on airplane mode. Finally, you are disconnected from the chaos of the city and free from the noise of the internet. You use your offline time to wander, reflect, and determine the adventure that awaits you when you land.</p>
         </div>
     </div>
     <div class="modal" id="modal2">
         <div class="modal-content">
             <span class="close" onclick="closeModal(2)">&times;</span>
-            <h2>Nightfall</h2>
-            <p>The world falls silent as the stars take the stage.</p>
+            <h2>feel the moment</h2>
+            <p>You are carefree, thriving, and having the time of your freaking life. Live music plays. There is nothing to do, but recognize the immeasurable happiness of here and now. </p>
         </div>
     </div>
     <div class="modal" id="modal3">
         <div class="modal-content">
             <span class="close" onclick="closeModal(3)">&times;</span>
-            <h2>Celestial Waves</h2>
-            <p>A cosmic dance of sound and light in the vast universe.</p>
+            <h2>play harder</h2>
+            <p>You are getting dressed. Plans are elusive but you are focused on getting ready. Time passes and it’s time for the night to begin. The moment you walk into the room, the entire room lights up. The energy is infectious and your mission begins.</p>
         </div>
     </div>
     <div class="modal" id="modal4">
         <div class="modal-content">
             <span class="close" onclick="closeModal(4)">&times;</span>
-            <h2>Ethereal Light</h2>
-            <p>A song that shines like a soft glow in the darkness.</p>
+            <h2>dance with me now</h2>
+            <p>You meet an old friend for the first time in a long time. The old friend sees your familiar face, but a different person. One that is fun-loving and adventurous, as opposed to studious and stern. You ask them to dance – but to their surprise, you’re no longer the person you were in the past.</p>
         </div>
     </div>
     <div class="modal" id="modal5">
         <div class="modal-content">
             <span class="close" onclick="closeModal(5)">&times;</span>
-            <h2>Liberosis</h2>
-            <p>A feeling of lightness, letting go of worries and embracing freedom.</p>
+            <h2>keep me awake</h2>
+            <p>You are staring out the window, overseeing the evening skyline. It’s well beyond midnight, and things are finally calm and quiet. Everyone is asleep and the only one keeping you company is your mind. At least for now, we’re truly free.</p>
         </div>
     </div>
     <script src="script.js"></script>
